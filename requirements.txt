@@ -1,0 +1,2 @@
+pycalphad==0.9.1
+espei==0.8.4

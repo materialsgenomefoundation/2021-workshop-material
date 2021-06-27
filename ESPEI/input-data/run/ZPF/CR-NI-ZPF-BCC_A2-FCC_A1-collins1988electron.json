@@ -1,0 +1,35 @@
+{
+    "components": ["CR", "NI"],
+    "phases": ["BCC", "FCC"],
+    "broadcast_conditions": false,
+    "conditions": {
+        "T": [1025, 1073, 1123, 1174, 1219, 1274, 1323, 1371, 1424, 1469, 1525, 1473, 1424, 1374, 1323, 1273, 1225, 1171, 1123, 1071, 1023],
+        "P": [101325.0]
+    },
+    "output": "ZPF",
+    "values": [
+        [["FCC", ["CR"], [0.374]], ["BCC", ["CR"], [null]]],
+        [["FCC", ["CR"], [0.382]], ["BCC", ["CR"], [null]]],
+        [["FCC", ["CR"], [0.395]], ["BCC", ["CR"], [null]]],
+        [["FCC", ["CR"], [0.406]], ["BCC", ["CR"], [null]]],
+        [["FCC", ["CR"], [0.427]], ["BCC", ["CR"], [null]]],
+        [["FCC", ["CR"], [0.446]], ["BCC", ["CR"], [null]]],
+        [["FCC", ["CR"], [0.460]], ["BCC", ["CR"], [null]]],
+        [["FCC", ["CR"], [0.470]], ["BCC", ["CR"], [null]]],
+        [["FCC", ["CR"], [0.488]], ["BCC", ["CR"], [null]]],
+        [["FCC", ["CR"], [0.491]], ["BCC", ["CR"], [null]]],
+        [["FCC", ["CR"], [0.507]], ["BCC", ["CR"], [null]]],
+        [["BCC", ["CR"], [0.722]], ["FCC", ["CR"], [null]]],
+        [["BCC", ["CR"], [0.779]], ["FCC", ["CR"], [null]]],
+        [["BCC", ["CR"], [0.866]], ["FCC", ["CR"], [null]]],
+        [["BCC", ["CR"], [0.916]], ["FCC", ["CR"], [null]]],
+        [["BCC", ["CR"], [0.932]], ["FCC", ["CR"], [null]]],
+        [["BCC", ["CR"], [0.961]], ["FCC", ["CR"], [null]]],
+        [["BCC", ["CR"], [0.966]], ["FCC", ["CR"], [null]]],
+        [["BCC", ["CR"], [0.977]], ["FCC", ["CR"], [null]]],
+        [["BCC", ["CR"], [0.981]], ["FCC", ["CR"], [null]]],
+        [["BCC", ["CR"], [0.985]], ["FCC", ["CR"], [null]]]
+    ],
+    "reference": "collins1988electron",
+    "comment": "From Figure 1. Converted from weight percent."
+}

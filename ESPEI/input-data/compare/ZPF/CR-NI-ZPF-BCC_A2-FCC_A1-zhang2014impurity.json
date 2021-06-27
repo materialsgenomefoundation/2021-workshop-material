@@ -1,0 +1,25 @@
+{
+    "components": [
+        "CR",
+        "NI"
+    ],
+    "phases": [
+        "BCC",
+        "FCC"
+    ],
+    "broadcast_conditions": false,
+    "conditions": {
+        "T": [
+            1473.0
+        ],
+        "P": [
+            101325.0
+        ]
+    },
+    "output": "ZPF",
+    "values": [
+        [["FCC", ["NI"], [0.508]], ["BCC", ["NI"], [0.282]]]
+    ],
+    "reference": "zhang2014impurity",
+    "comment": "Digitized diffusion data from Figure 4b"
+}

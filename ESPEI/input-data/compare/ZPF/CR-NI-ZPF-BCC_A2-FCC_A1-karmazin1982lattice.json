@@ -1,0 +1,21 @@
+{
+    "components": ["CR", "NI"],
+    "phases": ["BCC", "FCC"],
+    "broadcast_conditions": false,
+    "conditions": {
+        "T": [826, 875, 975, 1077, 1070, 1175, 1230],
+        "P": [101325.0]
+    },
+    "output": "ZPF",
+    "values": [
+        [["FCC", ["CR"], [0.3329]], ["BCC", ["NI"], [null]]],
+        [["FCC", ["CR"], [0.3436]], ["BCC", ["NI"], [null]]],
+        [["FCC", ["CR"], [0.3738]], ["BCC", ["NI"], [null]]],
+        [["FCC", ["CR"], [0.4]], ["BCC", ["NI"], [null]]],
+        [["FCC", ["CR"], [0.4]], ["BCC", ["NI"], [null]]],
+        [["FCC", ["CR"], [0.4282]], ["BCC", ["NI"], [null]]],
+        [["FCC", ["CR"], [0.4403]], ["BCC", ["NI"], [null]]]
+    ],
+    "reference": "karmazin1982lattice",
+    "comment": "Digitized from figure 8, ignoring the metastable point within Ni2Cr"
+}

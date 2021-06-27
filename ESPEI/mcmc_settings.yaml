@@ -1,0 +1,18 @@
+system:
+  phase_models: phases.json
+  datasets: input-data/run
+output:
+  output_db:  mcmc.tdb
+  verbosity:  2
+  tracefile:  null
+  probfile:   null
+  logfile:    null
+mcmc:
+  iterations: 3
+  scheduler: None
+  input_db: mcmc-start.tdb
+  chains_per_parameter: 2
+  data_weights:
+    ZPF: 20.0
+    SM: 0.1
+  approximate_equilibrium: True

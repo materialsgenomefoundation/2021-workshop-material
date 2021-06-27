@@ -1,0 +1,23 @@
+{
+    "components": ["CR", "NI"],
+    "phases": ["BCC", "FCC"],
+    "broadcast_conditions": false,
+    "conditions": {
+        "T": [1473.15, 1373.15, 1273.15, 1173.15, 1023.15, 1373.15, 1273.15, 1173.15, 1023.15],
+        "P": [101325.0]
+    },
+    "output": "ZPF",
+    "values": [
+        [["FCC", ["NI"], [0.5155]], ["BCC", ["NI"], [null]]],
+        [["FCC", ["NI"], [0.5155]], ["BCC", ["NI"], [null]]],
+        [["FCC", ["NI"], [0.542]], ["BCC", ["NI"], [null]]],
+        [["FCC", ["NI"], [0.581]], ["BCC", ["NI"], [null]]],
+        [["FCC", ["NI"], [0.6295]], ["BCC", ["NI"], [null]]],
+        [["BCC", ["NI"], [0.124]], ["FCC", ["NI"], [null]]],
+        [["BCC", ["NI"], [0.080]], ["FCC", ["NI"], [null]]],
+        [["BCC", ["NI"], [0.0405]], ["FCC", ["NI"], [null]]],
+        [["BCC", ["NI"], [0.014]], ["FCC", ["NI"], [null]]]
+    ],
+    "reference": "taylor1952constitution",
+    "comment": "Taken as mean composition single-phase/two-phase alloy regions, table 2."
+}

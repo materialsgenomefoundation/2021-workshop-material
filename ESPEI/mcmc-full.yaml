@@ -1,0 +1,19 @@
+system:
+  phase_models: phases.json
+  datasets: input-data/run
+output:
+  output_db:  mcmc-full.tdb
+  verbosity:  2
+  tracefile:  trace-full.npy
+  probfile:   lnprob-full.npy
+  logfile:    mcmc-full.log
+mcmc:
+  iterations: 2000
+  scheduler: dask
+  cores: 6
+  input_db: mcmc-start.tdb
+  chains_per_parameter: 2
+  data_weights:
+    ZPF: 20.0
+    SM: 0.1
+  approximate_equilibrium: True

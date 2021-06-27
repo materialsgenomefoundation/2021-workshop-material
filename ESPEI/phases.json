@@ -1,0 +1,19 @@
+{
+  "components": ["CR", "NI"],
+  "phases": {
+	     "LIQUID" : {
+			"sublattice_model": [["CR", "NI"]],
+			"sublattice_site_ratios": [1]
+	     },
+	     "FCC" : {
+			"aliases": ["FCC_A1"],
+			"sublattice_model": [["CR", "NI"]],
+			"sublattice_site_ratios": [1]
+	     },
+	     "BCC": {
+			"aliases": ["BCC_A2"],
+			"sublattice_site_ratios": [1],
+			"sublattice_model": [["CR", "NI"]]
+	     }
+    }
+}

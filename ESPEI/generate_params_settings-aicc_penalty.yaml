@@ -1,0 +1,15 @@
+system:
+  phase_models: phases.json
+  datasets: input-data/run
+
+output:
+  verbosity: 1
+  output_db: dft-aicc_penalty.tdb
+
+generate_parameters:
+  excess_model: linear
+  ref_state: SGTE91
+  aicc_penalty_factor:
+    LIQUID: 
+      HM: 20.0
+      SM: 20.0

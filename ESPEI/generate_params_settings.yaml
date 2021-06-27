@@ -1,0 +1,11 @@
+system:
+  phase_models: phases.json
+  datasets: input-data/run
+
+output:
+  verbosity: 1
+  output_db: dft.tdb
+
+generate_parameters:
+  excess_model: linear
+  ref_state: SGTE91

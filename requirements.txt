@@ -1,2 +1,2 @@
-pycalphad==0.9.1
+pycalphad==0.9.0
 espei==0.8.4

@@ -1,11 +1,18 @@
 system:
-  phase_models: phases.json
-  datasets: input-data/run
-
-output:
-  verbosity: 1
-  output_db: dft.tdb
-
+  phase_models: Cr-Ni_phases.json
+  datasets: input-data
+  tags:
+    dft:
+      excluded_model_contributions: ['idmix', 'mag']
+      weight: 0.1
+    nomag:
+      excluded_model_contributions: ['mag']
+    estimated-entropy:
+      excluded_model_contributions: ['idmix', 'mag']
+      weight: 0.1
 generate_parameters:
   excess_model: linear
   ref_state: SGTE91
+output:
+  verbosity: 1
+  output_db: generated.tdb

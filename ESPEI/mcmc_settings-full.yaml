@@ -13,15 +13,17 @@ system:
 output:
   output_db:  mcmc.tdb
   verbosity:  2
-  tracefile:  null  # don't write a trace file
-  probfile:   null  # don't write a lnprob file
-  logfile:    null  # write output to console
+  tracefile:  Cr-Ni-trace.npy
+  probfile:   Cr-Ni-lnprob.npy
+  logfile:    Cr-Ni-mcmc.log
 mcmc:
   iterations: 3
+  approximate_equilibrium: True
   save_interval: 1
-  scheduler: null   # no parallelization
-  input_db: mcmc-start.tdb  # same as our generated-aicc.tdb
-  chains_per_parameter: 2
+  scheduler: dask  # run in parallel 
+#   cores: 4  # number of cores (chooses all by default)
+  input_db: mcmc-start.tdb
+  chains_per_parameter: 4
   data_weights:
     ZPF: 40.0
     SM: 0.1

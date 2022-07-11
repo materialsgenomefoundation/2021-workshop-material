@@ -1,4 +1,3 @@
-from pycalphad.core.eqsolver import pointsolve
 from pycalphad.core.solver import Solver
 from pycalphad.core.composition_set import CompositionSet
 from pycalphad.core.utils import unpack_components, instantiate_models
@@ -7,7 +6,7 @@ from pycalphad import calculate, variables as v
 import numpy as np
 
 def starting_point(dbf, species, phase, conds, model):
-    
+
     # Broadcasting conditions not supported
     cur_conds = {str(k): float(v) for k, v in conds.items()}
     # callables are being unnecessarily rebuilt here
@@ -32,7 +31,7 @@ def starting_point(dbf, species, phase, conds, model):
     site_fractions = np.array(calc_p.Y.isel(points=idx_p).values.squeeze())
     phase_amt = 1.0 # arbitrary
     return site_fractions, phase_amt, state_variables
-    
+
 def composition_set(dbf, comps, phase, conds, phase_amt=None, fixed=None, models=None, phase_records=None, parameters=None):
     species = sorted(unpack_components(dbf, comps), key=str)
     models = models if models is not None else {}
@@ -54,7 +53,5 @@ def composition_set(dbf, comps, phase, conds, phase_amt=None, fixed=None, models
 def local_equilibrium(composition_sets, comps, conds):
     # Broadcasting conditions not supported
     cur_conds = {str(k): float(v) for k, v in conds.items()}
-    solver = Solver()
-    comps = sorted([v.Species(x) for x in comps])
-    result = pointsolve(composition_sets, comps, cur_conds, solver)
+    result = Solver().solve(composition_sets, cur_conds)
     return result, composition_sets
